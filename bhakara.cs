@@ -6,6 +6,18 @@ internal class Program
 {
 	private static void Main(string[] args)
 	{
+		          //   int m = 12, n = 18;
+            // if (m > 10)
+            // {
+            //     if (n > 20)
+            //     {
+            //         Console.WriteLine("Result1");
+            //     }
+            //     else
+            //     {
+            //         Console.WriteLine("Result2");
+            //     }
+            // }
 		double a = 1.0;
 		double b = 5.0;
 		double c = 6.0;
