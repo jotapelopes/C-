@@ -1,23 +1,3 @@
-using System;
-
-namespace Exercicos;
-
-internal class Program
-{
-	private static void Main(string[] args)
-	{
-		          //   int m = 12, n = 18;
-            // if (m > 10)
-            // {
-            //     if (n > 20)
-            //     {
-            //         Console.WriteLine("Result1");
-            //     }
-            //     else
-            //     {
-            //         Console.WriteLine("Result2");
-            //     }
-            // }
 using System.Drawing;
 using System.Runtime.Intrinsics.X86;
 
@@ -32,9 +12,13 @@ namespace ConsoleApp2
             //Se o valor de Δ for igual a zero(Δ = 0), a equação apresentará uma raiz real.
             //Se o valor de Δ for menor que zero(Δ < 0), a equação não possui raízes reais.
 
-            double a = 1;
-            double b = 5;
-            double c = 6;
+            Console.WriteLine("Insira o valor de A: ");
+            double a = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Insira o valor de B: ");
+            double b = Convert.ToDouble(Console.ReadLine()); 
+            Console.WriteLine("Insira o valor de C: ");
+            double c = Convert.ToDouble(Console.ReadLine());
+
             double delta = (b * b) - 4.0 * a * c;
             Console.WriteLine(delta);
             if (delta > 0)
@@ -55,7 +39,4 @@ namespace ConsoleApp2
             Console.ReadKey();
         }
     }
-}
-
-	}
 }
