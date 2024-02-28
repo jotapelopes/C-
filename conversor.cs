@@ -25,19 +25,31 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double hoje = Convert.ToDouble(textBox1.Text);
-            double ontem = Convert.ToDouble(textBox2.Text);
+            // double hoje = Convert.ToDouble(textBox1.Text);
+            // double ontem = Convert.ToDouble(textBox2.Text);
 
-            if (hoje <= ontem * 0.95)
+            // if (hoje <= ontem * 0.95)
+            // {
+            //     string retorno = ("Comprar dolar");
+            //     label4.Text = retorno.ToString();
+            // }
+            // else
+            // {
+            //     string retorno = ("Não vale a pena");
+            //     label4.Text = retorno.ToString();
+            // }
+
+            double dolarHoje = Convert.ToDouble(textBox1.Text);
+            double dolarOntem = Convert.ToDouble(textBox2.Text);
+            double porcentagemParaCompra = 100 - ((dolarHoje / dolarOntem) * 100);
+
+            if (porcentagemParaCompra >= 5)
             {
-                string retorno = ("Comprar dolar");
-                label4.Text = retorno.ToString();
+                label3.Text = "COMPRAAAAAAAA AGORA COMPRA COMPRA";
+                return;
             }
-            else
-            {
-                string retorno = ("Não vale a pena");
-                label4.Text = retorno.ToString();
-            }
+
+            label3.Text = "Compra não amigo :(";
         }
 
         private void label1_Click(object sender, EventArgs e)
