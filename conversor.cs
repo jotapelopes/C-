@@ -30,7 +30,8 @@ namespace WindowsFormsApp1
 
             if (hoje <= ontem * 0.95)
             {
-                Console.WriteLine("Comprar dolár");
+                string retorno = ("Comprar dolar");
+                label4.Text = retorno.ToString();
             }
             else
             {
